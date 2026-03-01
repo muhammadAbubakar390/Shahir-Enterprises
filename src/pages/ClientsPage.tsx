@@ -106,7 +106,7 @@ export function ClientsPage() {
       name: 'Gomal University, D.I. Khan – KPK',
       category: 'Education',
       logo: '/brands/gomaluni-logo.png',
-      website: 'https://gu.edu.pk'
+      website: 'https://gu.edu.pk/'
     },
     {
       name: 'Shifa Tameer-e-Millat University, Islamabad',

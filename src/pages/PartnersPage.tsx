@@ -12,9 +12,9 @@ export function PartnersPage() {
     { name: 'Edvotek', logo: '/brands/edvotek-logo.avif', website: 'https://www.edvotek.com' },
     { name: 'Suslaser', logo: '/brands/suslaser-logo.png', website: 'http://www.suslaser.com' },
     { name: 'Tamheed Energy', logo: '/brands/tamheed-energy.png', website: 'https://tamheedenergy.com' },
-    { name: 'Yidi', logo: '/brands/yidi-logo.png', website: 'http://www.yidiyiliao.com' },
+    { name: 'Yidi', logo: '/brands/yidi-logo.png', website: 'https://www.zjyidi.com/' },
     { name: 'Merck', logo: '/brands/merck-logo.png', website: 'https://www.merckgroup.com' },
-    { name: 'Four E\'s Scientific', logo: '/brands/foure-logo.png', website: 'https://www.4es-scientific.com' },
+    { name: 'Four E\'s Scientific', logo: '/brands/foure-logo.png', website: 'https://www.4esci.com/' },
     { name: 'Prestan', logo: '/brands/prestan-logo.png', website: 'https://www.prestanproducts.com' }];
 
   const representations = [
