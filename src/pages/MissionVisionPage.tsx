@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Quote } from 'lucide-react';
+
 export function MissionVisionPage() {
   return (
     <div className="pt-20">
@@ -27,8 +28,8 @@ export function MissionVisionPage() {
               <img
                 src="/C-E-O.jpeg"
                 alt="Mian Rashid, CEO"
-                className="w-full h-full object-cover" />
-
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="text-center md:text-left">
               <h2 className="text-2xl font-bold text-[#1e3a5f]">Mian Rashid</h2>
@@ -107,6 +108,6 @@ export function MissionVisionPage() {
           <div className="absolute right-0 bottom-0 w-64 h-64 bg-white transform rotate-45 translate-y-32 translate-x-32"></div>
         </div>
       </div>
-    </div>);
-
+    </div>
+  );
 }

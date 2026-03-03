@@ -39,7 +39,8 @@ export function HomePage() {
     <div className="overflow-hidden">
       {/* Hero Section */}
       <div className="pt-20">
-        <section className="relative min-h-[80vh] flex items-start pt-28 lg:pt-40 overflow-hidden">
+        <section className="relative min-h-[85vh] flex items-start pt-40 lg:pt-60 overflow-hidden">
+
           {/* Background Video */}
           <video
             autoPlay
@@ -51,10 +52,6 @@ export function HomePage() {
             <source src="/shahir-ent-video.mp4" type="video/mp4" />
           </video>
 
-          {/* Overlays */}
-          <div className="absolute inset-0 bg-white/45 backdrop-blur-[3px] z-[1]"></div>
-          <div className="absolute top-0 right-0 w-1/2 h-full bg-[#1e3a5f]/5 skew-x-12 transform origin-top-right z-[2]"></div>
-          <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#00bcd4]/10 rounded-full blur-3xl z-[2]"></div>
 
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
@@ -66,19 +63,14 @@ export function HomePage() {
                 variants={staggerContainer}
                 className="space-y-6 max-w-4xl"
               >
-                <motion.div
-                  variants={fadeInUp}
-                  className="inline-flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-sm border border-gray-100"
-                >
-                  <Award className="w-4 h-4 text-[#00bcd4]" />
-                  <span className="text-sm font-medium text-gray-600">
-                    ISO 9001:2015 Certified
-                  </span>
-                </motion.div>
+
 
                 <motion.h1
                   variants={fadeInUp}
-                  className="text-2xl lg:text-4xl xl:text-5xl font-bold text-[#1e3a5f] leading-tight"
+                  className="text-2xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight"
+                  style={{
+                    textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 2px 2px 4px rgba(0,0,0,0.5)"
+                  }}
                 >
                   Your Trusted Partner in{' '}
                   <span className="text-[#00bcd4]">Scientific</span>,{' '}
@@ -88,7 +80,10 @@ export function HomePage() {
 
                 <motion.p
                   variants={fadeInUp}
-                  className="text-xl text-gray-600 max-w-3xl leading-relaxed"
+                  className="text-xl text-white/95 font-medium max-w-3xl leading-relaxed"
+                  style={{
+                    textShadow: "-0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000"
+                  }}
                 >
                   Providing advanced laboratory equipment, analytical instruments,
                   and comprehensive support for research, healthcare, and industry

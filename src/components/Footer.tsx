@@ -44,17 +44,17 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Company Info */}
           <div>
-            <Link to="/" className="flex items-center mb-6">
+            <Link to="/" className="inline-flex items-center bg-white p-3 rounded-xl mb-6 shadow-sm hover:shadow-md transition-shadow">
               <img
-                src="/shahir-ent-logo.jif"
+                src="/shahir-ent-footer-logo.png"
                 alt="Shahir Enterprises Logo"
                 className="w-12 h-12 mr-3 object-contain"
               />
-              <div className="flex items-center ml-2">
+              <div className="flex items-center">
                 <img
-                  src="/shahir-enterprises-new-logo.png"
+                  src="/shahir-ent-footer-logo1.png"
                   alt="Shahir Enterprises"
-                  className="h-8 w-auto object-contain"
+                  className="h-12 w-auto object-contain"
                 />
               </div>
             </Link>

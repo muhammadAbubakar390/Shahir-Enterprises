@@ -33,8 +33,10 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-white/90 backdrop-blur-sm py-4'
-        }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+        ? 'bg-white shadow-md'
+        : 'bg-white/90 backdrop-blur-sm'
+        } py-4`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
@@ -49,7 +51,7 @@ export function Header() {
             />
             <div className="flex items-center ml-2">
               <img
-                src="/shahir-enterprises-new-logo.png"
+                src="/shahir-ent-footer-logo1.png"
                 alt="Shahir Enterprises"
                 className="h-6 w-auto object-contain"
               />
@@ -57,34 +59,40 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex space-x-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                to={link.path}
-                className={`text-sm font-medium transition-all duration-300 hover:text-[#00bcd4] relative group ${location.pathname === link.path ? 'text-[#00bcd4]' : 'text-gray-700'
-                  }`}
-              >
-                {link.name}
-                <motion.span
-                  className={`absolute -bottom-1 left-0 h-0.5 bg-[#00bcd4] ${location.pathname === link.path ? 'w-full' : 'w-0'
+          <div className="hidden lg:flex items-center space-x-8">
+            <nav className="flex space-x-8">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.name}
+                  to={link.path}
+                  className={`text-sm font-medium transition-all duration-300 hover:text-[#00bcd4] relative group ${location.pathname === link.path
+                    ? 'text-[#00bcd4]'
+                    : 'text-gray-700'
                     }`}
-                  whileHover={{ width: '100%' }}
-                  transition={{ duration: 0.3 }}
-                />
-              </Link>
-            ))}
-          </nav>
+                >
+                  {link.name}
+                  <motion.span
+                    className={`absolute -bottom-1 left-0 h-0.5 bg-[#00bcd4] ${location.pathname === link.path ? 'w-full' : 'w-0'
+                      }`}
+                    whileHover={{ width: '100%' }}
+                    transition={{ duration: 0.3 }}
+                  />
+                </Link>
+              ))}
+            </nav>
+          </div>
 
-          {/* Mobile Menu Button */}
-          <motion.button
-            className="lg:hidden p-2 text-gray-600 hover:text-[#00bcd4] transition-colors"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
-            whileTap={{ scale: 0.9 }}
-          >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </motion.button>
+          <div className="lg:hidden flex items-center space-x-4">
+            {/* Mobile Menu Button */}
+            <motion.button
+              className="text-gray-600 hover:text-[#00bcd4] transition-colors"
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label="Toggle menu"
+              whileTap={{ scale: 0.9 }}
+            >
+              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </motion.button>
+          </div>
         </div>
       </div>
 
@@ -95,7 +103,7 @@ export function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-white border-t border-gray-100 overflow-hidden"
+            className="lg:hidden border-t overflow-hidden bg-white border-gray-100"
           >
             <div className="px-4 py-4 space-y-4">
               {navLinks.map((link, index) => (
@@ -107,8 +115,7 @@ export function Header() {
                 >
                   <Link
                     to={link.path}
-                    className={`block text-base font-medium py-2 border-b border-gray-50 ${location.pathname === link.path ? 'text-[#00bcd4]' : 'text-gray-700'
-                      }`}
+                    className={`block text-base font-medium py-2 border-b border-gray-50 text-gray-700 ${location.pathname === link.path ? 'text-[#00bcd4]' : ''}`}
                   >
                     {link.name}
                   </Link>

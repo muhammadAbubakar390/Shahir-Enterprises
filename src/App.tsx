@@ -82,5 +82,4 @@ export function App() {
         <WhatsAppButton />
       </div>
     </Router>);
-
 }
