@@ -27,12 +27,14 @@ export function CertificatePage() {
                         <p className="text-gray-600 mt-2">Official Certification for Shahir Enterprises</p>
                     </div>
 
-                    <div className="relative group overflow-hidden rounded-xl border-4 border-gray-50">
-                        <img
-                            src="/ISO-9001-SHAHIR-ENTERPRISES-5.jpg"
-                            alt="ISO 9001 Certificate"
-                            className="w-full h-auto shadow-inner"
-                        />
+                    <div className="relative group overflow-hidden rounded-xl border-4 border-gray-50 h-[800px]">
+                        <iframe
+                            src="/E-COPY-SHAHIR ENTERPRISES-QMS-SA1..pdf"
+                            className="w-full h-full"
+                            title="ISO 9001 Certificate PDF"
+                        >
+                            This browser does not support PDFs. Please download the PDF to view it: <a href="/E-COPY-SHAHIR ENTERPRISES-QMS-SA1..pdf">Download PDF</a>
+                        </iframe>
                     </div>
                 </motion.div>
             </div>
