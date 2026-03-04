@@ -27,22 +27,14 @@ export function CertificatePage() {
                         <p className="text-gray-600 mt-2">Official Certification for Shahir Enterprises</p>
                     </div>
 
-                    <div className="relative group overflow-hidden rounded-xl border-4 border-gray-50 shadow-lg mb-8">
-                        <img
-                            src="/iso-certificate-new.png"
-                            alt="ISO 9001 Certificate"
-                            className="w-full h-auto"
-                        />
-                    </div>
-
                     <div className="flex justify-center">
-                        <a
-                            href="/E-COPY-SHAHIR ENTERPRISES-QMS-SA1..pdf"
-                            download
-                            className="bg-[#1e3a5f] text-white px-8 py-3 rounded-full font-bold hover:bg-[#00bcd4] transition-colors shadow-md"
-                        >
-                            Download Original PDF
-                        </a>
+                        <div className="relative group overflow-hidden rounded-xl border-4 border-gray-50 shadow-lg max-w-2xl">
+                            <img
+                                src="/iso-certificate-full.png"
+                                alt="ISO 9001 Certificate"
+                                className="w-full h-auto"
+                            />
+                        </div>
                     </div>
                 </motion.div>
             </div>
