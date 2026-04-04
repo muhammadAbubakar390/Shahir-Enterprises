@@ -88,10 +88,12 @@ export function ProductsPage() {
       description:
         'Essential lab supplies, reagents, and accessories for daily experimental and analytical work.',
       features: [
-        'Glassware & plasticware',
-        'Reagents & chemicals',
-        'Pipettes & tips',
-        'Lab safety equipment'],
+        'CRM',
+        'Reference Standards',
+        'Glassware & Plasticware',
+        'Reagents & Chemicals',
+        'Pipettes & Tips',
+        'Lab Safety Equipment'],
 
       image:
         'General Laboratory & Research Consumables.jpg'

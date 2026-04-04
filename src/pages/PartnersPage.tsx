@@ -15,7 +15,9 @@ export function PartnersPage() {
     { name: 'Yidi', logo: '/brands/yidi-logo.png', website: 'https://www.zjyidi.com/' },
     { name: 'Merck', logo: '/brands/merck-logo.png', website: 'https://www.merckgroup.com' },
     { name: 'Four E\'s Scientific', logo: '/brands/foure-logo.png', website: 'https://www.4esci.com/' },
-    { name: 'Prestan', logo: '/brands/prestan-logo.png', website: 'https://www.prestanproducts.com' }];
+    { name: 'Prestan', logo: '/brands/prestan-logo.png', website: 'https://www.prestanproducts.com' },
+    { name: 'LLG', logo: '/llg_logo.jif', website: 'https://www.llg.de/en/' },
+    { name: 'LGC Clinical Diagnostics', logo: '/lgc_logo.webp', website: 'https://www.lgcclinicaldiagnostics.com/about/lgc-clinical-diagnostics' }];
 
   const representations = [
     {
@@ -46,7 +48,7 @@ export function PartnersPage() {
   return (
     <div className="pt-20">
       {/* Header */}
-      <section className="bg-gray-50 py-16 relative overflow-hidden">
+      <section className="bg-white py-16 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-[#00bcd4]/5 transform rotate-45 translate-x-32 -translate-y-32"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold text-[#1e3a5f] mb-4">
@@ -105,7 +107,7 @@ export function PartnersPage() {
                     <img
                       src={partner.logo}
                       alt={partner.name}
-                      className="max-h-16 w-auto object-contain transition-all duration-300 filter grayscale group-hover:grayscale-0"
+                      className="max-h-16 w-auto object-contain transition-all duration-300"
                     />
                   </div>
                 </motion.div>
@@ -116,7 +118,7 @@ export function PartnersPage() {
       </section>
 
       {/* Representation Categories */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white shadow-inner">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4">

@@ -80,9 +80,9 @@ export function HomePage() {
 
                 <motion.p
                   variants={fadeInUp}
-                  className="text-xl text-white/95 font-medium max-w-3xl leading-relaxed"
+                  className="text-xl font-medium max-w-3xl leading-relaxed text-[#00bcd4]"
                   style={{
-                    textShadow: "-0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000"
+                    textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 3px 3px 6px rgba(0,0,0,0.7)"
                   }}
                 >
                   Providing advanced laboratory equipment, analytical instruments,
@@ -212,10 +212,10 @@ export function HomePage() {
                     y: -10,
                     boxShadow: '0 20px 40px rgba(0,0,0,0.1)'
                   }}
-                  className="bg-gray-50 p-8 rounded-xl border border-gray-100 group cursor-pointer">
+                  className="bg-white p-8 rounded-xl border border-gray-100 group cursor-pointer shadow-sm hover:shadow-xl transition-all duration-300">
 
                   <motion.div
-                    className="bg-white w-16 h-16 rounded-lg flex items-center justify-center text-[#1e3a5f] shadow-sm mb-6 group-hover:bg-[#1e3a5f] group-hover:text-white transition-colors"
+                    className="bg-white w-16 h-16 rounded-lg flex items-center justify-center text-[#1e3a5f] shadow-sm mb-6 group-hover:text-[#00bcd4] transition-colors"
                     whileHover={{
                       rotate: 360
                     }}

@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Quote } from 'lucide-react';
 
 export function MissionVisionPage() {
   return (
@@ -37,11 +36,13 @@ export function MissionVisionPage() {
                 Chief Executive Officer
               </p>
               <div className="relative">
-                <Quote className="absolute -top-4 -left-4 w-8 h-8 text-gray-200 transform -scale-x-100" />
-                <p className="text-gray-600 italic relative z-10">
-                  "Our commitment goes beyond selling equipment. We are
+                <p 
+                  className="text-gray-700 italic relative z-10 text-xl leading-relaxed"
+                  style={{ fontFamily: "'Playfair Display', serif" }}
+                >
+                  Our commitment goes beyond selling equipment. We are
                   dedicated to empowering the scientific community of Pakistan
-                  with the tools they need to discover, innovate, and heal."
+                  with the tools they need to discover, innovate, and heal.
                 </p>
               </div>
             </div>
